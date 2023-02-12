@@ -33,11 +33,11 @@ with open(source, 'rt', encoding='utf-8-sig') as cp_csv:
             if str_error:
                 print("Error. Retry...")
                 time.sleep(1)
-                res = requests.get(url,headers=header)
-                soup = BeautifulSoup(res.content,'html.parser')
-                script = soup.find_all('script')[9]
-                sc = script.get_text()
-                x = re.findall(r'\((.*?)\)', sc)[1].split()
+                res2 = requests.get(url,headers=header)
+                soup2 = BeautifulSoup(res2.content,'html.parser')
+                script2 = soup2.find_all('script')[9]
+                sc2 = script2.get_text()
+                x = re.findall(r'\((.*?)\)', sc2)[1].split()
         a = int(x[0])
         b = int(x[2])
         c = int(x[4])
