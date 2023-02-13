@@ -39,8 +39,8 @@ Mass zippyshare link download
     ```
 3. Run
 
-    -- Paste link in list.txt
     ```
+    python3 Zippydown.py
     python Zippydown.py
     ```
 
